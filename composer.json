@@ -1,0 +1,27 @@
+{
+    "name": "pfazzi/fizz-buzz-kata",
+    "description": "A Fizz Buzz Kata solution in PHP driven by phpspec",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Patrick Luca Fazzi",
+            "email": "patrick91@live.it"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pfazzi\\FizzBuzzKata\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Pfazzi\\FizzBuzzKata\\": "spec/"
+        }
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^6.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}

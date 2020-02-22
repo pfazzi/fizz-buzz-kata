@@ -1,0 +1,4 @@
+suites:
+    app_suite:
+        namespace: Pfazzi\FizzBuzzKata
+        psr4_prefix: Pfazzi\FizzBuzzKata
