@@ -4,13 +4,22 @@ namespace Pfazzi\FizzBuzzKata;
 
 class Kata
 {
+    private int $fizzNumber;
+    private int $buzzNumber;
+
+    public function __construct(int $fizzNumber, int $buzzNumber)
+    {
+        $this->fizzNumber = $fizzNumber;
+        $this->buzzNumber = $buzzNumber;
+    }
+
     public function print(int $number): string
     {
-        if ($number % 3 === 0 && $number % 5 === 0) {
+        if ($number % $this->fizzNumber === 0 && $number % $this->buzzNumber === 0) {
             return 'FizzBuzz';
-        } elseif ($number % 3 === 0) {
+        } elseif ($number % $this->fizzNumber === 0) {
             return 'Fizz';
-        } elseif ($number % 5 === 0) {
+        } elseif ($number % $this->buzzNumber === 0) {
             return 'Buzz';
         } else {
             return (string) $number;
